@@ -18,11 +18,11 @@ export default {
   },
   methods: {
     apiPublic: async function () {
-      const res = await axios.get('http://localhost:8080/public')
+      const res = await axios.get('http://localhost:8000/public')
       this.msg = res.data
     },
     apiPrivate: async function () {
-      const res = await axios.get('http://localhost:8080/private')
+      const res = await axios.get('http://localhost:8000/private')
       this.msg = res.data
     }
   }
